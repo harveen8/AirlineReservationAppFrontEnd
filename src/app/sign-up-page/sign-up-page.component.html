@@ -1,1 +1,6 @@
-<p>sign-up-page works!</p>
+<input type="text" [(ngModel)]="name">
+<input type="text" [(ngModel)]="email">
+<input type="text" [(ngModel)]="password">
+<button (click)="addUser()">Sign up</button>
+<button (click)="logIn()">Log in</button>
+<p>{{message}}</p>
