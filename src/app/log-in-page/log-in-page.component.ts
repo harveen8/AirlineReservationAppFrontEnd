@@ -20,7 +20,7 @@ message: string="";
     if(data==-1){
     this.message= "not a user";
     }else{
-      this.message="success!"
+      this.router.navigateByUrl('home');
     }})
   }
   signUp(): void {

@@ -1,0 +1,22 @@
+<h3>Airline</h3>
+<select id="airlines"  (change)="priceChange()">
+    <option *ngFor="let airline of airlines" value={{airline.airlineId}}>{{airline.airlineName}}</option>
+</select>
+<h3>Departing City</h3>
+<select id="departingCity" (change)="priceChange()">
+    <option *ngFor="let location of locations"  value={{locations}} >{{location}}</option>
+</select>
+<h3>Arrival City</h3>
+<select id="arrivingCity" (change)="priceChange()">
+    <option *ngFor="let location of locations"  value={{locations}}>{{location}}</option>
+</select>
+<h3>Departure Date</h3>
+<input type="date" [(ngModel)]="departure" (click)="priceChange()">
+<h3>Arrival Date</h3>
+<input type="date" [(ngModel)]="arrival" (click)="priceChange()">
+
+<h3>Price</h3>
+${{price}}
+
+<button (click)="addReservation()">Add Reservation</button>
+
