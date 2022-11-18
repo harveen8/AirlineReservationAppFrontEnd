@@ -16,7 +16,7 @@
 <input type="date" [(ngModel)]="arrival" (click)="priceChange()">
 
 <h3>Price</h3>
-${{price}}
+{{price | moneyPipe }}
 
 <button (click)="addReservation()">Add Reservation</button>
 
